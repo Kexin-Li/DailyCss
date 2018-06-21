@@ -1,0 +1,335 @@
+body{
+    background: #B5E4F6;
+  }
+  
+  .box{
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: 6%;
+    width: 600px;
+    height: 400px;
+    background: none;
+    border: 2px solid none;
+  }
+  
+  .screen-outer {
+    position: absolute;
+    width: 75%;
+    height: 60%;
+    top: 10%;
+    left: 12.5%;
+    background: #0D161D;
+  }
+  
+  .screen-inner {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    top: 10%;
+    left: 5%;
+    background: #E60001;
+  }
+  
+  .switch-left {
+    position: absolute;
+    background: none;
+    border: solid 8px white;
+    width: 10%;
+    height: 60%;
+    top: 15%;
+    left: 32.5%;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+  }
+  
+  .switch-right {
+    position: absolute;
+    background: white;
+    border: solid 8px white;
+    width: 10%;
+    height: 60%;
+    top: 15%;
+    right: 32.5%;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+  
+  .switch-circle-left {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 50%;
+    height: 20%;
+    top: 20%;
+    left: 25%;
+    animation: move1 0.7s infinite;
+  }
+  
+  .switch-circle-right {
+    position: absolute;
+    background: #E60001;
+    border-radius: 50%;
+    width: 50%;
+    height: 20%;
+    bottom: 20%;
+    left: 25%;
+    animation: move2 0.7s infinite;
+  }
+  
+  @keyframes move1 {
+    0%{
+      top: 20%;
+    }
+    25%{
+      top: 40%;
+    }
+    
+    50%{
+      top: 60%;
+    }
+    75%{
+      top: 75%;
+    }
+    100%{
+      top: 80%;
+    }
+  }
+  
+  @keyframes move2 {
+    0%{
+      bottom: 20%;
+    }
+    25%{
+      bottom: 40%;
+    }
+    
+    50%{
+      bottom: 60%;
+    }
+    75%{
+      bottom: 75%;
+    }
+    100%{
+      bottom: 80%;
+    }
+  }
+  
+  .controller-left {
+    position: absolute;
+    background: #737A80;
+    width: 15%;
+    height: 100%;
+    top: 0%;
+    left: -15%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  
+  .controller-right {
+    position: absolute;
+    background: #737A80;
+    width: 15%;
+    height: 100%;
+    top: 0%;
+    right: -15%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  
+  .square-bottom {
+    position: absolute;
+    background: #202226;
+    width: 25%;
+    height: 7%;
+    bottom: 18%;
+    right: 10%;
+  }
+  
+  .top-button {
+    position: absolute;
+    background: #202226;
+    width: 30%;
+    height: 4%;
+    top: 10%;
+    right: 5%;
+    border-radius: 40px;
+  }
+  
+  .dpad-left {
+    position: absolute;
+    background: none;
+    width: 80%;
+    height: 25%;
+    bottom: 30%;
+    left: 10%;
+  }
+  
+  .dpad-right{
+    position: absolute;
+    background: none;
+    width: 80%;
+    left: 10%;
+    top: 20%;
+    height: 25%;
+  }
+  
+  .up {
+    position: absolute;
+    background: #202226;
+    width: 35%;
+    left: 32.5%;
+    height: 30%;
+    top: 0%;
+    border-radius: 50%;
+  }
+  
+  .down {
+    position: absolute;
+    background: #202226;
+    width: 35%;
+    left: 32.5%;
+    height: 30%;
+    bottom: 0%;
+    border-radius: 50%;
+  }
+  
+  .left {
+    position: absolute;
+    background: #202226;
+    width: 35%;
+    left: 0%;
+    height: 30%;
+    top: 35%;
+    border-radius: 50%;
+  }
+  
+  .right {
+    position: absolute;
+    background: #202226;
+    width: 35%;
+    right: 0%;
+    height: 30%;
+    top: 35%;
+    border-radius: 50%;
+  }
+  
+  .joystick-left {
+    position: absolute;
+    border-radius: 50%;
+    height: 15%;
+    width: 50%;
+    top: 20%;
+    left: 25%;
+    background: #36383F;
+  }
+  
+  .joystick-right{
+    position: absolute;
+    border-radius: 50%;
+    height: 15%;
+    width: 50%;
+    top: 55%;
+    left: 25%;
+    background: #36383F;
+  }
+  
+  .joystick-inner{
+    position: absolute;
+    border-radius: 50%;
+    height: 80%;
+    width: 80%;
+    top: 10%;
+    left: 10%;
+    background: #202226;
+  }
+  
+  .circle-bottom {
+    position: absolute;
+    background: #36383F;
+    border-radius: 50%;
+    width: 25%;
+    height: 7.5%;
+    bottom: 15%;
+    left: 15%;
+  }
+  
+  .circle-inner {
+    position: absolute;
+    border-radius: 50%;
+    height: 80%;
+    width: 80%;
+    top: 10%;
+    left: 10%;
+    background: #202226;
+  }
+  
+  .top-dpad {
+    position: absolute;
+    top: 3%;
+    height: 10%;
+    width: 30%;
+    left: 8%;
+    background: #202226;
+  }
+  
+  .square-top-left {
+    position: absolute;
+    background: #737A80;
+    height: 35%;
+    width: 35%;
+    left: -5%;
+  }
+  
+  .square-top-right {
+    position: absolute;
+    background: #737A80;
+    height: 35%;
+    width: 35%;
+    right: -5%;
+  }
+  
+  .square-bottom-left {
+    position: absolute;
+    background: #737A80;
+    height: 35%;
+    width: 35%;
+    left: -5%;
+    bottom: 0%;
+  }
+  
+  .square-bottom-right {
+    position: absolute;
+    background: #737A80;
+    height: 35%;
+    width: 35%;
+    right: -5%;
+    bottom: 0%;
+  }
+  
+  @media all and (max-width: 600px) {
+     .box{
+      margin-top: 100px;
+      width: 250px;
+      height: 175px;
+    }
+    .switch-left {
+    border: solid 3px white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    }
+    .switch-right {
+    border: solid 3px white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    }
+    .controller-left {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    }
+    .controller-right {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    }
+    
+  }

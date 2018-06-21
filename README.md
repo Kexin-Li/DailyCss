@@ -11,3 +11,5 @@ Daily CSS Images
 - [tiger](/tiger/index.html)
 - [card](/card/card.html)
 - [penguin](/penguin/penguin.html)
+- responsive design project
+  - [My Tribute Page](/responsive_design_project/tribute_page/tribute_page.html)

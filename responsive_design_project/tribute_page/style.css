@@ -1,6 +1,7 @@
 #main {
   font-family:"Trebuchet MS", Helvetica, sans-serif;
   margin-top: 30px;
+  padding: 15px;
   background: #eee;
   border-radius: 10px;
 }

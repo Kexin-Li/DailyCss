@@ -9,3 +9,5 @@ Daily CSS Images
 - [moon](/moon/moon.html)
 - [nintendo switch](/nintendo_switch/index.html)
 - [tiger](/tiger/index.html)
+- [card](/card/card.html)
+- [penguin](/penguin/penguin.html)

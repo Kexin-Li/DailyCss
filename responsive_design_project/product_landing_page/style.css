@@ -1,0 +1,225 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  font-family: 'Lato', sans-serif;
+}
+
+#wrapper {
+  position: relative;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* navigation bar */
+/* nav bar 的固定 */
+header {
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  display: flex;
+  padding: 0px 20px;
+  background-color: #eee;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#logo {
+  width: 60vw;
+}
+
+#logo img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+
+nav {
+  font-weight: 400;
+
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 50px;
+}
+
+nav ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav li {
+  padding-bottom: 10px;
+}
+
+/* form */
+#form-outer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  height: 200px;
+}
+
+input {
+  width: 280px;
+  height: 30px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+button {
+  width: auto;
+  height: 30px;
+  padding:  0 20px;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  border-radius: 2px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+/* features */
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.grid {
+  display: flex;
+}
+
+#features {
+  margin-top: 30px;
+}
+
+#features .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: darkorange;
+}
+
+#features .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+/* how it works */
+/* inframe 里嵌入 video */
+#howitworks {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#howitworks iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+/* pricing */
+/* 三个格子 */
+#pricing {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#tenor, #bass, #valve {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%  / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+#pricing .level {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#pricing #tenor h2, #pricing #bass h2, #pricing #valve h2 {
+  margin-top: 15px;
+}
+#pricing #tenor ol, #pricing #bass ol, #pricing #valve ol {
+  margin: 15px 0;
+}
+#pricing #tenor ol li, #pricing #bass ol li, #pricing #valve ol li {
+  padding: 5px 0;
+}
+#pricing #tenor button, #pricing #bass button, #pricing #valve button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+}
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+}
+footer ul li {
+  padding: 0 10px;
+}
+footer span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+}

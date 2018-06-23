@@ -2,16 +2,20 @@
 
 Daily CSS Images
 
-- [heartbeat](/heartbeat/heartbeat.html)
-- [hulk](/hulk/index.html)
-- [iron man](/iron_man/index.html)
-- [koala](/koala/index.html)
-- [moon](/moon/moon.html)
-- [nintendo switch](/nintendo_switch/index.html)
-- [tiger](/tiger/index.html)
-- [card](/card/card.html)
-- [penguin](/penguin/penguin.html)
-- Responsive Design Project
-  - [My Tribute Page](/responsive_design_project/tribute_page/tribute_page.html)
-  - [Survey Form](/responsive_design_project/survey_form/survey.html)
-  - [Product Landing Page](/responsive_design_project/product_landing_page/product.html)
+- [Heartbeat](/heartbeat/heartbeat.html)
+- [Hulk](/hulk/index.html)
+- [Iron Man](/iron_man/index.html)
+- [Koala](/koala/index.html)
+- [Moon](/moon/moon.html)
+- [Nintendo Switch](/nintendo_switch/index.html)
+- [Tiger](/tiger/index.html)
+- [Card](/card/card.html)
+- [Penguin](/penguin/penguin.html)
+- [My Tribute Page](/tribute_page/tribute_page.html)
+- [Survey Form](/survey_form/survey.html)
+- [Product Landing Page](/product_landing_page/product.html)
+- [Technical Documentation Page](/technical_doc_page/doc.html)
+
+## TODO
+
+- Responsive Design Product Landing Page

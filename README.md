@@ -1,5 +1,9 @@
 # DailyCss
 
+- [同心圆]()
+
+## Obsoleted
+
 Daily CSS Images
 
 - [Heartbeat](/heartbeat/heartbeat.html)
@@ -15,7 +19,3 @@ Daily CSS Images
 - [Survey Form](/survey_form/survey.html)
 - [Product Landing Page](/product_landing_page/product.html)
 - [Technical Documentation Page](/technical_doc_page/doc.html)
-
-## TODO
-
-- Responsive Design Product Landing Page

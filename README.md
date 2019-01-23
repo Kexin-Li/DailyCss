@@ -1,6 +1,6 @@
 # DailyCss
 
-- [同心圆]()
+- [同心圆](./concentric.html)
 
 ## Obsoleted
 

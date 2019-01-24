@@ -1,6 +1,8 @@
 # DailyCss
 
 - [同心圆](./concentric.html)
+- [Modal](./modal.html)
+- [垂直居中](./vertical-center.html)
 
 ## Obsoleted
 

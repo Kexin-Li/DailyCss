@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>垂直居中</title>
+  </head>
+  <body>
+    <style>
+      .container {
+        /* 在父组件已知高度的情况下 */
+        height: 200px;
+        width: 200px;
+        transform-style: preserve-3d;
+        border: 1px solid;
+        padding: 10px;
+      }
+
+      .app {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    </style>
+    <div class="container">
+      <div class="app">
+        hello world
+        <div>
+          This defines the default size of an element before the remaining space
+          is distributed. It can be a length (e.g. 20%, 5rem, etc.)
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

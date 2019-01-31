@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>hover提示</title>
+  </head>
+  <body>
+    <style>
+      body {
+        padding: 30px;
+      }
+      .css-tips {
+        position: relative;
+        cursor: pointer;
+      }
+      .css-tips:hover:before {
+        content: attr(data-title);
+        position: absolute;
+        margin-left: 50%;
+        transform: translate(-50%, -2.5em);
+        padding: 4px 4px 10px;
+        color: #fff;
+        font-size: 12px;
+        white-space: nowrap;
+        background: #000;
+        clip-path: polygon(
+          0 0,
+          100% 0,
+          100% calc(100% - 6px),
+          calc(50% + 4px) calc(100% - 6px),
+          50% 100%,
+          calc(50% - 4px) calc(100% - 6px),
+          0 calc(100% - 6px)
+        );
+      }
+    </style>
+    <a
+      href="javascript:"
+      class="icon-delete css-tips"
+      data-title="I'm tooltippppppp"
+      role="button"
+    >
+      DELETE
+    </a>
+  </body>
+</html>

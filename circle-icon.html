@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>圆圈里的勾</title>
+  </head>
+  <body>
+    <style>
+      .demoSpan1 {
+        height: 18px;
+        width: 18px;
+        display: block;
+        position: relative;
+        border-radius: 50px;
+        background: #333;
+      }
+
+      .demoSpan1:after,
+      .demoSpan1:before {
+        content: '';
+        height: 29px;
+        width: 2px;
+        display: block;
+        background: #fff;
+        position: absolute;
+        top: -10px;
+        left: -16px;
+        border-radius: 10px;
+        transform: rotate(45deg);
+      }
+
+      .demoSpan1:before {
+        height: 7px;
+        transform: rotate(-45deg);
+        top: 8px;
+        left: 4px;
+      }
+    </style>
+    <span class="demoSpan1"></span>
+  </body>
+</html>

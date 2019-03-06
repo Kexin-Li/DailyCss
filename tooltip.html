@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tooltip</title>
+  </head>
+  <body>
+    <style>
+      .icon-delete {
+        position: relative;
+        width: 215px;
+        height: 40px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.22);
+        background-color: #ffcd4a;
+        line-height: 40px;
+        margin: 0 auto;
+        color: #fff;
+        text-align: center;
+        margin: 2em 1em;
+        display: inline-block;
+      }
+      .icon-delete::before {
+        content: '';
+        width: 0;
+        border-style: solid;
+        border-width: 1em 0.5em 0 0.5em;
+        border-color: #000 transparent transparent transparent;
+        position: absolute;
+        top: -1em;
+        display: block;
+      }
+      .icon-delete::after {
+        content: attr(data-title);
+        position: absolute;
+        top: -2em;
+        left: -0.9em;
+        word-break: keep-all;
+        background-color: #000;
+        padding: 0.2em 0.4em;
+        color: #fff;
+        border-radius: 0.2em;
+        line-height: 1;
+        display: block;
+      }
+    </style>
+    <div class="icon-delete css-tips" data-title="删除" role="button">删除</div>
+  </body>
+</html>

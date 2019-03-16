@@ -1,0 +1,104 @@
+<html>
+  <body>
+    <style type="text/css">
+      .pause {
+        height: 40px;
+        width: 40px;
+        display: block;
+        position: relative;
+      }
+
+      .pause:before {
+        content: '';
+        height: 0;
+        width: 0;
+        display: block;
+        border: 8px transparent solid;
+        border-right-width: 0;
+        border-left-color: #8ac752;
+        position: absolute;
+        top: 11px;
+        left: 16px;
+        border-radius: 13px;
+      }
+
+      .play {
+        height: 40px;
+        width: 40px;
+        display: block;
+        position: relative;
+      }
+
+      .play:before,
+      .play:after {
+        content: '';
+        height: 14px;
+        width: 3px;
+        display: block;
+        /* background: #8ac752; */
+        background-color: var(--color);
+        position: absolute;
+        top: 12px;
+        left: 14px;
+      }
+
+      .play:after {
+        left: 22px;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+        border-radius: 13px;
+        background-color: #f5f5f5;
+        padding: 0 5px;
+      }
+      .progress {
+        position: relative;
+        width: 248px;
+        height: 4px;
+        border-radius: 25px;
+        /* box-shadow: 0 3px 3px 0 #efefef; */
+        background-color: #e6e6e6;
+      }
+      .current-progress {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 153px;
+        height: 4px;
+        border-radius: 25px;
+        background-color: #8ac752;
+      }
+      .anchor {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        background-color: #8ac752;
+        border-radius: 50%;
+        transform: translateY(-50%);
+      }
+    </style>
+    <!-- <span class="pause"></span>
+    <hr />
+    <span class="play"></span> -->
+    <div class="container">
+      <div
+        class="play"
+        style="
+          --color: #000
+          "
+      ></div>
+      <div class="progress">
+        <div class="current-progress">
+          <div class="anchor"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

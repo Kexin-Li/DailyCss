@@ -324,15 +324,18 @@ body {
   border: 0.6vmin solid var(--border);
   border-radius: 100% 100% 2vmin 2vmin;
   transform-origin: top center;
+  -webkit-transform-origin: top center;
   z-index: -1;
 }
 
 .left-shoulder {
   transform: translateX(50%) rotateZ(35deg) rotateX(1deg);
+  -webkit-transform: translateX(50%) rotateZ(35deg) rotateX(1deg);
 }
 
 .right-shoulder {
   transform: translateX(-50%) rotateZ(-35deg);
+  -webkit-transform: translateX(-50%) rotateZ(-35deg);
 }
 
 .arm {
@@ -341,17 +344,20 @@ body {
   background-color: var(--red);
   border: 0.6vmin solid var(--border);
   transform-origin: top center;
+  -webkit-transform-origin: top center;
   z-index: -2;
 }
 
 .left-arm .arm {
   transform: translate(41%, -40%) rotateZ(15deg) rotateX(1deg);
+  -webkit-transform: translate(41%, -40%) rotateZ(15deg) rotateX(1deg);
 }
 
 .right-arm .arm {
   width: 75%;
   height: 80%;
   transform: translate(-30%, -35%) rotateZ(-30deg) rotateX(1deg);
+  -webkit-transform: translate(-30%, -35%) rotateZ(-30deg) rotateX(1deg);
 }
 
 .right-arm .arm::before {
@@ -371,7 +377,9 @@ body {
   border: 0.6vmin solid var(--border);
   border-radius: 2vmin 3vmin 3vmin 3vmin;
   transform-origin: top center;
+  -webkit-transform-origin: top center;
   transform: translate(38%, -240%) rotateZ(-30deg) rotateX(1deg);
+  -webkit-transform: translate(38%, -240%) rotateZ(-30deg) rotateX(1deg);
 }
 
 .propulsion {
@@ -407,6 +415,7 @@ body {
   background-color: var(--red);
   border: 0.6vmin solid var(--border);
   transform-origin: top center;
+  -webkit-transform-origin: top center;
   z-index: -2;
 }
 
@@ -416,6 +425,7 @@ body {
   height: 70%;
   border-radius: 3vmin 6vmin 2vmin 2vmin;
   transform: rotateZ(5deg);
+  -webkit-transform: rotateZ(5deg);
 }
 
 .right-leg {
@@ -425,6 +435,7 @@ body {
   height: 70%;
   border-radius: 6vmin 3vmin 2vmin 2vmin;
   transform: rotateZ(-5deg);
+  -webkit-transform: rotateZ(-5deg);
 }
 
 .leg::before {
@@ -475,6 +486,7 @@ body {
   border-radius: 2.9vmin;
   overflow: hidden;
   transform-origin: bottom center;
+  -webkit-transform-origin: bottom center;
 }
 
 .finger::before {
@@ -488,19 +500,23 @@ body {
 
 .finger-1 {
   transform: translate(1vmin, -40%) rotateZ(-65deg);
+  -webkit-transform: translate(1vmin, -40%) rotateZ(-65deg);
 }
 
 .finger-2 {
   transform: translate(1.4vmin, -70%) rotateZ(-30deg);
+  -webkit-transform: translate(1.4vmin, -70%) rotateZ(-30deg);
 }
 
 .finger-3 {
   transform: translate(3.6vmin, -70%) rotateZ(0);
+  -webkit-transform: translate(3.6vmin, -70%) rotateZ(0);
 }
 
 .finger-4 {
   width: 2.5vmin;
   transform: translate(3.5vmin, -45%) rotateZ(65deg);
+  -webkit-transform: translate(3.5vmin, -45%) rotateZ(65deg);
 }
 
 .plam {
@@ -546,9 +562,11 @@ body {
   50%,
   100% {
     transform: translateY(3%);
+    -webkit-transform: translateY(3%);
   }
   25%,
   75% {
     transform: translateY(-3%);
+    -webkit-transform: translateY(-3%);
   }
 }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Swiper</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background: #262d43;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    </style>
+    <div class="siema">
+      <img
+        src="https://media-image1.baydn.com/storage_media_image/klupzt/c9af855c517673dba58fc75e1d3e83ec.1868956698bdc62c5e25d908711a7d45.png"
+      />
+      <img
+        src="https://media-image1.baydn.com/storage_media_image/klupzt/03261e32adfbc425301daae6cb4fad18.4a47664e58b3f4c3a9487eae96c8a5aa.png"
+      />
+      <img
+        src="https://media-image1.baydn.com/storage_media_image/klupzt/ca04d9f4c06ca43733faa014a70626c9.7cbf7e05202ecc279c00491b455df882.png"
+      />
+      <img
+        src="https://media-image1.baydn.com/storage_media_image/klupzt/74b59ab923ee4f240495b53a1097a7c0.978b0c8d8fc1dda14b31e626276b9d35.png"
+      />
+      <img
+        src="https://media-image1.baydn.com/storage_media_image/klupzt/749be1022385f13ef55279c2a0e07bf3.2d6ccaa2fc1de277fe7d7bc26b07e4e2.png"
+      />
+    </div>
+    <div class="pagination">
+      <span class="bullet"></span>
+      <span class="bullet"></span>
+      <span class="bullet"></span>
+      <span class="bullet"></span>
+      <span class="bullet"></span>
+    </div>
+
+    <!-- <script src="./swiper.js"></script>
+    <script>
+      new Swiper({
+        loop: false,
+        startIndex: 2
+      });
+    </script> -->
+    <script src="./index.js"></script>
+    <script>
+      new Swiper({
+        selector: '.siema',
+        startIndex: 3
+      });
+    </script>
+  </body>
+</html>

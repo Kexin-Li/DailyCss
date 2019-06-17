@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Traffic Light</title>
+  </head>
+  <body>
+    <div id="traffic-light" style="width: 100px; height: 100px"></div>
+    <script>
+      const traffic = document.getElementById('traffic-light');
+
+      function sleep(duration) {
+        return new Promise(function(resolve, reject) {
+          setTimeout(resolve, duration);
+        });
+      }
+
+      async function changeColor(duration, color) {
+        traffic.style.backgroundColor = color;
+        await sleep(duration);
+      }
+
+      async function main() {
+        while (true) {
+          await sleep(3000, 'green');
+          await sleep(1000, 'yellow');
+          await sleep(2000, 'red');
+        }
+      }
+
+      main();
+    </script>
+  </body>
+</html>
